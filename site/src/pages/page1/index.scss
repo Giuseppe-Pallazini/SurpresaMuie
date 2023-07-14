@@ -20,11 +20,13 @@ body {
     .h1-pg1 {
         display: flex;
         justify-content: center;
+        margin: 1em 0 0 0;
     }
 
     .p-pg1 {
         display: flex;
         justify-content: center;
+        margin: 3em 0 0 0;
     }
 
     .div1-pg1 {
@@ -32,32 +34,63 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        border: 1px solid black;
-        padding: 5em;
-        
-        .button1 {
-            display: flex;
-            background-color: none;
-            margin: 0 2em 0 0;
-            padding: .8em 1.5em;
-            border-radius: 1em;
-            color: $black;
-            border-color: $black;
+        padding: 3em; 
 
-            position: relative;
-            transform: translateX(4em);
-        }
-    
-        .button2 {
-            display: flex;
-            background-color: none;
-            margin: 0 0 0 2em;
-            padding: .8em 1.5em;
-            border-radius: 1em;
-            color: $black;
-            border-color: $black;
-        }
     }
+
+    .div1-pg1 button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            --color: #560bad;
+            font-family: inherit;
+            display: inline-block;
+            width: 8em;
+            height: 2.6em;
+            line-height: 2.5em;
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid var(--color);
+            transition: color .5s;
+            z-index: 1;
+            font-size: 17px;
+            border-radius: 6px;
+            font-weight: 500;
+            color: var(--color);
+            cursor: pointer;
+    }
+           
+           
+    .div1-pg1 button:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            background: var(--color);
+            height: 150px;
+            width: 200px;
+            border-radius: 50%;
+           }
+           
+    .div1-pg1 button:hover {
+            color: #fff;
+           }
+           
+    .div1-pg1 button:before {
+            top: 100%;
+            left: 100%;
+            transition: all .7s;
+           }
+           
+    .div1-pg1 button:hover:before {
+            top: -30px;
+            left: -30px;
+           }
+           
+    .div1-pg1 button:active:before {
+            background: #3a0ca3;
+            transition: background 0s;
+           }
 
 }
 

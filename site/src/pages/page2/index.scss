@@ -1,0 +1,23 @@
+$font-ExtraLight: 'Inter-ExtraLight';
+$font-Light: 'Inter-Light';
+$font-Regular: 'Inter-Regular';
+$font-Bold: 'Inter-Bold';
+
+$principal-color: #6115dd;
+$black: #1f1f17;
+$white: #f1f1f1;
+
+
+body {
+    background-color: $white;
+}
+
+.main-pg2 {
+    display: flex;
+    font-family: $font-Regular;
+    justify-content: center;
+
+    .h1-pg2 {
+        
+    }
+}
